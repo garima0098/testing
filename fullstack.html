@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Full Stack Development – ePortfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-person-circle me-2"></i>Garima Bhattarai</a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks">
+      <i class="bi bi-list text-white fs-4"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navLinks">
+      <ul class="navbar-nav ms-auto gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house me-1"></i>Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="fullstack.html"><i class="bi bi-stack me-1"></i>Full Stack</a></li>
+        <li class="nav-item"><a class="nav-link" href="html.html"><i class="bi bi-filetype-html me-1"></i>HTML</a></li>
+        <li class="nav-item"><a class="nav-link" href="css.html"><i class="bi bi-filetype-css me-1"></i>CSS</a></li>
+        <li class="nav-item"><a class="nav-link" href="bootstrap.html"><i class="bi bi-bootstrap me-1"></i>Bootstrap</a></li>
+        <li class="nav-item"><a class="nav-link" href="javascript.html"><i class="bi bi-filetype-js me-1"></i>JavaScript</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-2">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">Full Stack Development</li>
+      </ol>
+    </nav>
+    <h1><i class="bi bi-stack me-2"></i>What is Full Stack Development?</h1>
+    <p>Understanding the complete web development stack from browser to database.</p>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<section class="section">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-7">
+        <h4><i class="bi bi-info-circle text-primary me-2"></i>Overview</h4>
+        <p>Full stack development means working on <strong>all layers</strong> of a web application. A full stack developer understands how the frontend (user interface), backend (server logic), and database all connect together to build a working product.</p>
+        <p class="mt-3">Companies look for full stack developers because they can handle the entire development process independently from designing a page to writing a server route and querying a database.</p>
+
+        <h4 class="mt-4"><i class="bi bi-diagram-3 text-primary me-2"></i>The Three Layers</h4>
+        <div class="timeline mt-3">
+          <div class="timeline-item">
+            <h6><i class="bi bi-display me-1"></i>Presentation Layer (Frontend)</h6>
+            <p>What the user sees — built with HTML, CSS, and JavaScript. Frameworks like React, Vue, or Angular are commonly used here.</p>
+          </div>
+          <div class="timeline-item">
+            <h6><i class="bi bi-gear me-1"></i>Logic Layer (Backend)</h6>
+            <p>Business rules and server-side processing — built with Node.js, Express, PHP, Python (Django/Flask), or Java Spring.</p>
+          </div>
+          <div class="timeline-item">
+            <h6><i class="bi bi-database me-1"></i>Data Layer (Database)</h6>
+            <p>Persistent storage — SQL databases (MySQL, PostgreSQL) or NoSQL (MongoDB, Firebase) are used to store and retrieve data.</p>
+          </div>
+        </div>
+
+        <h4 class="mt-4"><i class="bi bi-tools text-primary me-2"></i>Common Full Stack Tools</h4>
+        <div class="mt-2">
+          <span class="topic-badge">HTML5</span><span class="topic-badge">CSS3</span>
+          <span class="topic-badge">JavaScript</span><span class="topic-badge">Bootstrap</span>
+          <span class="topic-badge">Node.js</span><span class="topic-badge">Express.js</span>
+          <span class="topic-badge">React</span><span class="topic-badge">MongoDB</span>
+          <span class="topic-badge">MySQL</span><span class="topic-badge">REST APIs</span>
+          <span class="topic-badge">Git</span><span class="topic-badge">VS Code</span>
+        </div>
+
+        <h4 class="mt-4"><i class="bi bi-person-workspace text-primary me-2"></i>What Does a Full Stack Developer Do?</h4>
+        <ul style="line-height:2;">
+          <li>Design and build user interfaces with HTML, CSS, and JavaScript</li>
+          <li>Write server-side code to handle requests and business logic</li>
+          <li>Create and manage databases queries, schemas, relationships</li>
+          <li>Build and consume REST APIs to connect frontend with backend</li>
+          <li>Deploy applications to hosting platforms (Heroku, Vercel, AWS)</li>
+          <li>Version control using Git and GitHub for collaboration</li>
+          <li>Debug and test code across the entire application stack</li>
+        </ul>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="row g-3">
+          <div class="col-6">
+            <div class="card p-3 text-center">
+              <i class="bi bi-display fs-2 text-primary mb-2"></i>
+              <h6 class="card-title">Frontend</h6>
+              <p class="card-text small">HTML · CSS · JS · React</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card p-3 text-center">
+              <i class="bi bi-server fs-2 text-danger mb-2"></i>
+              <h6 class="card-title">Backend</h6>
+              <p class="card-text small">Node.js · Express · PHP</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card p-3 text-center">
+              <i class="bi bi-database fs-2 text-success mb-2"></i>
+              <h6 class="card-title">Database</h6>
+              <p class="card-text small">MySQL · MongoDB · Firebase</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card p-3 text-center">
+              <i class="bi bi-arrow-left-right fs-2 text-warning mb-2"></i>
+              <h6 class="card-title">APIs</h6>
+              <p class="card-text small">REST · JSON · HTTP</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-box mt-3">
+          <strong><i class="bi bi-lightbulb text-warning me-1"></i>Did you know?</strong><br/>
+          The term "full stack" became popular around 2010. Today, it is one of the most in demand job titles in the tech industry, with roles at companies like Google, Amazon, and Meta.
+        </div>
+
+        <div class="mt-3" style="border:1px solid #dee2e6; border-radius:10px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+          <div style="background:#0d6efd; padding:12px 16px;">
+            <h6 class="mb-0 text-white fw-bold"><i class="bi bi-bar-chart me-2"></i>Full Stack vs Specialist</h6>
+          </div>
+          <table class="table table-sm mb-0" style="font-size:0.88rem;">
+            <thead style="background:#e7f1ff;">
+              <tr>
+                <th style="padding:10px 14px; color:#0a3d91; border-bottom:2px solid #b6d4fe;">Role</th>
+                <th style="padding:10px 14px; color:#0a3d91; border-bottom:2px solid #b6d4fe;">Focus</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="background:#fff;">
+                <td style="padding:10px 14px; font-weight:600; color:#0d6efd; border-bottom:1px solid #f0f0f0;"><i class="bi bi-stack me-1"></i>Full Stack</td>
+                <td style="padding:10px 14px; border-bottom:1px solid #f0f0f0;">Frontend + Backend</td>
+              </tr>
+              <tr style="background:#fafafa;">
+                <td style="padding:10px 14px; font-weight:600; border-bottom:1px solid #f0f0f0;"><i class="bi bi-display me-1 text-primary"></i>Frontend Dev</td>
+                <td style="padding:10px 14px; border-bottom:1px solid #f0f0f0;">UI / Browser only</td>
+              </tr>
+              <tr style="background:#fff;">
+                <td style="padding:10px 14px; font-weight:600; border-bottom:1px solid #f0f0f0;"><i class="bi bi-server me-1 text-danger"></i>Backend Dev</td>
+                <td style="padding:10px 14px; border-bottom:1px solid #f0f0f0;">Server / DB only</td>
+              </tr>
+              <tr style="background:#fafafa;">
+                <td style="padding:10px 14px; font-weight:600;"><i class="bi bi-cloud-upload me-1 text-success"></i>DevOps</td>
+                <td style="padding:10px 14px;">Deploy / Infra</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE NAV -->
+<div class="page-nav">
+  <div class="container d-flex justify-content-between">
+    <a href="index.html"><i class="bi bi-arrow-left me-1"></i>Home</a>
+    <a href="html.html">Next: HTML <i class="bi bi-arrow-right ms-1"></i></a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <h6><i class="bi bi-person-circle me-2"></i>Garima Bhattarai</h6>
+        <p class="small">CET138 ePortfolio — Built with HTML, CSS, Bootstrap 5 &amp; JavaScript.</p>
+      </div>
+      <div class="col-md-4">
+        <h6><i class="bi bi-link-45deg me-2"></i>Quick Links</h6>
+        <ul class="list-unstyled small">
+          <li><a href="index.html"><i class="bi bi-house me-1"></i>Home</a></li>
+          <li><a href="fullstack.html"><i class="bi bi-stack me-1"></i>Full Stack</a></li>
+          <li><a href="html.html"><i class="bi bi-filetype-html me-1"></i>HTML</a></li>
+          <li><a href="css.html"><i class="bi bi-filetype-css me-1"></i>CSS</a></li>
+          <li><a href="bootstrap.html"><i class="bi bi-bootstrap me-1"></i>Bootstrap</a></li>
+          <li><a href="javascript.html"><i class="bi bi-filetype-js me-1"></i>JavaScript</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h6><i class="bi bi-info-circle me-2"></i>Module Info</h6>
+        <ul class="list-unstyled small">
+          <li><i class="bi bi-book me-1"></i>Module: CET138 Full Stack Development</li>
+          <li><i class="bi bi-clipboard me-1"></i>Assignment: 1 ePortfolio</li>
+          <li><i class="bi bi-bar-chart me-1"></i>Worth: 30% of module mark</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom"><p class="mb-0">&copy; 2025 Garima Adhikari &nbsp;|&nbsp; CET138 Full Stack Development</p></div>
+  </div>
+</footer>
+
+<button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="bi bi-arrow-up"></i></button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

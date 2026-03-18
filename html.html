@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML – ePortfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-person-circle me-2"></i>Garima Adhikari</a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks">
+      <i class="bi bi-list text-white fs-4"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navLinks">
+      <ul class="navbar-nav ms-auto gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house me-1"></i>Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="fullstack.html"><i class="bi bi-stack me-1"></i>Full Stack</a></li>
+        <li class="nav-item"><a class="nav-link active" href="html.html"><i class="bi bi-filetype-html me-1"></i>HTML</a></li>
+        <li class="nav-item"><a class="nav-link" href="css.html"><i class="bi bi-filetype-css me-1"></i>CSS</a></li>
+        <li class="nav-item"><a class="nav-link" href="bootstrap.html"><i class="bi bi-bootstrap me-1"></i>Bootstrap</a></li>
+        <li class="nav-item"><a class="nav-link" href="javascript.html"><i class="bi bi-filetype-js me-1"></i>JavaScript</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-2">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">HTML</li>
+      </ol>
+    </nav>
+    <h1><i class="bi bi-filetype-html me-2"></i>HTML</h1>
+    <p>HyperText Markup Language the structure and skeleton of every web page.</p>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<section class="section">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <h4><i class="bi bi-info-circle text-primary me-2"></i>What is HTML?</h4>
+        <p>HTML (HyperText Markup Language) is the standard markup language used to create the structure of web pages. It uses <strong>elements</strong> (tags) to describe different types of content such as headings, paragraphs, images, and links.</p>
+        <p class="mt-2">Every web page you visit is built on an HTML foundation. Browsers read HTML documents and render them as visible pages.</p>
+
+        <h4 class="mt-4"><i class="bi bi-list-check text-primary me-2"></i>Key HTML Concepts</h4>
+        <ul class="mt-2" style="line-height:2;">
+          <li><strong>Semantic Elements</strong> — <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code></li>
+          <li><strong>Forms &amp; Inputs</strong> — <code>&lt;form&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, <code>&lt;select&gt;</code></li>
+          <li><strong>Media</strong> — <code>&lt;img&gt;</code>, <code>&lt;video&gt;</code>, <code>&lt;audio&gt;</code></li>
+          <li><strong>Links &amp; Navigation</strong> — <code>&lt;a href=""&gt;</code>, <code>&lt;nav&gt;</code></li>
+          <li><strong>Tables</strong> — <code>&lt;table&gt;</code>, <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code></li>
+          <li><strong>Meta Tags</strong> — for SEO, character encoding, and viewport settings</li>
+          <li><strong>Accessibility</strong> — <code>alt</code>, <code>aria-label</code>, <code>role</code> attributes</li>
+        </ul>
+
+        <h4 class="mt-4"><i class="bi bi-table text-primary me-2"></i>Common HTML Tags</h4>
+        <table class="table table-bordered table-striped table-sm mt-2">
+          <thead><tr><th>Tag</th><th>Purpose</th><th>Example</th></tr></thead>
+          <tbody>
+            <tr><td><code>&lt;h1&gt;–&lt;h6&gt;</code></td><td>Headings</td><td><code>&lt;h1&gt;Title&lt;/h1&gt;</code></td></tr>
+            <tr><td><code>&lt;p&gt;</code></td><td>Paragraph</td><td><code>&lt;p&gt;Text&lt;/p&gt;</code></td></tr>
+            <tr><td><code>&lt;a&gt;</code></td><td>Hyperlink</td><td><code>&lt;a href="url"&gt;</code></td></tr>
+            <tr><td><code>&lt;img&gt;</code></td><td>Image</td><td><code>&lt;img src="img.jpg"&gt;</code></td></tr>
+            <tr><td><code>&lt;div&gt;</code></td><td>Block container</td><td><code>&lt;div class="box"&gt;</code></td></tr>
+            <tr><td><code>&lt;span&gt;</code></td><td>Inline container</td><td><code>&lt;span&gt;word&lt;/span&gt;</code></td></tr>
+            <tr><td><code>&lt;ul&gt; / &lt;ol&gt;</code></td><td>Lists</td><td><code>&lt;li&gt;item&lt;/li&gt;</code></td></tr>
+            <tr><td><code>&lt;form&gt;</code></td><td>Form container</td><td><code>&lt;form method="POST"&gt;</code></td></tr>
+            <tr><td><code>&lt;input&gt;</code></td><td>Input field</td><td><code>&lt;input type="text"&gt;</code></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col-lg-6">
+        <h4><i class="bi bi-code-slash text-primary me-2"></i>Full HTML Page Example</h4>
+        <pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport"
+      content="width=device-width, initial-scale=1.0"&gt;
+    &lt;meta name="description"
+      content="My portfolio page"&gt;
+    &lt;title&gt;Garima's Portfolio&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;nav&gt;
+        &lt;a href="index.html"&gt;Home&lt;/a&gt;
+        &lt;a href="about.html"&gt;About&lt;/a&gt;
+      &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+      &lt;section id="hero"&gt;
+        &lt;h1&gt;Welcome to My Portfolio&lt;/h1&gt;
+        &lt;p&gt;I am a full stack developer.&lt;/p&gt;
+        &lt;img src="profile.jpg" alt="Garima"&gt;
+      &lt;/section&gt;
+      &lt;section id="skills"&gt;
+        &lt;h2&gt;My Skills&lt;/h2&gt;
+        &lt;ul&gt;
+          &lt;li&gt;HTML5&lt;/li&gt;
+          &lt;li&gt;CSS3&lt;/li&gt;
+          &lt;li&gt;JavaScript&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/section&gt;
+      &lt;section id="contact"&gt;
+        &lt;h2&gt;Contact Me&lt;/h2&gt;
+        &lt;form action="submit.php" method="POST"&gt;
+          &lt;input type="text" name="name"
+            placeholder="Your name" required&gt;
+          &lt;input type="email" name="email"
+            placeholder="Your email" required&gt;
+          &lt;textarea name="message"&gt;&lt;/textarea&gt;
+          &lt;button type="submit"&gt;Send&lt;/button&gt;
+        &lt;/form&gt;
+      &lt;/section&gt;
+    &lt;/main&gt;
+    &lt;footer&gt;
+      &lt;p&gt;&amp;copy; 2025 Garima Adhikari&lt;/p&gt;
+    &lt;/footer&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+
+        <div class="info-box mt-3">
+          <strong><i class="bi bi-lightbulb text-warning me-1"></i>Why Semantic HTML?</strong><br/>
+          Using semantic tags like <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code> instead of generic <code>&lt;div&gt;</code> tags improves accessibility for screen readers and helps search engines understand the page structure (SEO).
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE NAV -->
+<div class="page-nav">
+  <div class="container d-flex justify-content-between">
+    <a href="fullstack.html"><i class="bi bi-arrow-left me-1"></i>Previous: Full Stack</a>
+    <a href="css.html">Next: CSS <i class="bi bi-arrow-right ms-1"></i></a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4"><h6><i class="bi bi-person-circle me-2"></i>Garima Adhikari</h6><p class="small">CET138 ePortfolio — Built with HTML, CSS, Bootstrap 5 &amp; JavaScript.</p></div>
+      <div class="col-md-4">
+        <h6><i class="bi bi-link-45deg me-2"></i>Quick Links</h6>
+        <ul class="list-unstyled small">
+          <li><a href="index.html"><i class="bi bi-house me-1"></i>Home</a></li>
+          <li><a href="fullstack.html"><i class="bi bi-stack me-1"></i>Full Stack</a></li>
+          <li><a href="html.html"><i class="bi bi-filetype-html me-1"></i>HTML</a></li>
+          <li><a href="css.html"><i class="bi bi-filetype-css me-1"></i>CSS</a></li>
+          <li><a href="bootstrap.html"><i class="bi bi-bootstrap me-1"></i>Bootstrap</a></li>
+          <li><a href="javascript.html"><i class="bi bi-filetype-js me-1"></i>JavaScript</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4"><h6><i class="bi bi-info-circle me-2"></i>Module Info</h6><ul class="list-unstyled small"><li><i class="bi bi-book me-1"></i>CET138 Full Stack Development</li><li><i class="bi bi-clipboard me-1"></i>Assignment 1 ePortfolio</li></ul></div>
+    </div>
+    <div class="footer-bottom"><p class="mb-0">&copy; 2025 Garima Adhikari &nbsp;|&nbsp; CET138 Full Stack Development</p></div>
+  </div>
+</footer>
+
+<button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="bi bi-arrow-up"></i></button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

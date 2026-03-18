@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript – ePortfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-person-circle me-2"></i>Garima Adhikari</a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks">
+      <i class="bi bi-list text-white fs-4"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navLinks">
+      <ul class="navbar-nav ms-auto gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house me-1"></i>Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="fullstack.html"><i class="bi bi-stack me-1"></i>Full Stack</a></li>
+        <li class="nav-item"><a class="nav-link" href="html.html"><i class="bi bi-filetype-html me-1"></i>HTML</a></li>
+        <li class="nav-item"><a class="nav-link" href="css.html"><i class="bi bi-filetype-css me-1"></i>CSS</a></li>
+        <li class="nav-item"><a class="nav-link" href="bootstrap.html"><i class="bi bi-bootstrap me-1"></i>Bootstrap</a></li>
+        <li class="nav-item"><a class="nav-link active" href="javascript.html"><i class="bi bi-filetype-js me-1"></i>JavaScript</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-2">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">JavaScript</li>
+      </ol>
+    </nav>
+    <h1><i class="bi bi-filetype-js me-2"></i>JavaScript</h1>
+    <p>The programming language of the web adding interactivity, logic, and dynamic behaviour.</p>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<section class="section">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <h4><i class="bi bi-info-circle text-primary me-2"></i>What is JavaScript?</h4>
+        <p>JavaScript (JS) is a lightweight, interpreted programming language that runs in the browser. It allows developers to create dynamically updating content, control multimedia, animate images, and respond to user actions all without reloading the page.</p>
+        <p class="mt-2">JavaScript is also used server-side with <strong>Node.js</strong>, making it a true full stack language.</p>
+
+        <h4 class="mt-4"><i class="bi bi-list-check text-primary me-2"></i>Key JavaScript Concepts</h4>
+        <ul style="line-height:2;">
+          <li><strong>Variables</strong> — <code>var</code>, <code>let</code>, <code>const</code></li>
+          <li><strong>Data Types</strong> — String, Number, Boolean, Array, Object, null, undefined</li>
+          <li><strong>Functions</strong> — declarations, expressions, arrow functions</li>
+          <li><strong>DOM Manipulation</strong> — <code>getElementById</code>, <code>querySelector</code>, <code>innerHTML</code></li>
+          <li><strong>Events</strong> — <code>addEventListener</code>, click, input, submit</li>
+          <li><strong>Conditionals</strong> — if/else, ternary operator, switch</li>
+          <li><strong>Loops</strong> — for, while, forEach, map, filter</li>
+          <li><strong>Async JS</strong> — Promises, async/await, fetch API</li>
+          <li><strong>ES6+ Features</strong> — template literals, destructuring, spread operator</li>
+        </ul>
+
+        <h4 class="mt-4"><i class="bi bi-play-circle text-primary me-2"></i>Live Demo Click Counter</h4>
+        <p class="text-muted small">Demonstrates DOM manipulation and event handling.</p>
+        <div class="border rounded p-4 text-center bg-white">
+          <span id="counter-val">0</span>
+          <div class="d-flex justify-content-center gap-2 mt-2">
+            <button class="btn btn-danger" onclick="changeCount(-1)"><i class="bi bi-dash-lg me-1"></i>Decrease</button>
+            <button class="btn btn-success" onclick="changeCount(1)"><i class="bi bi-plus-lg me-1"></i>Increase</button>
+          </div>
+          <button class="btn btn-secondary btn-sm mt-3" onclick="resetCount()"><i class="bi bi-arrow-counterclockwise me-1"></i>Reset</button>
+          <p class="text-muted small mt-2 mb-0">The DOM updates instantly on every click no page reload needed.</p>
+        </div>
+
+        <h4 class="mt-4"><i class="bi bi-play-circle text-primary me-2"></i>Live Demo Colour Changer</h4>
+        <p class="text-muted small">Demonstrates random values and DOM style manipulation.</p>
+        <div class="text-center">
+          <div id="colorBox" style="height:80px;background:#0d6efd;border-radius:8px;transition:background 0.4s;display:flex;align-items:center;justify-content:center;color:white;font-weight:bold;font-size:0.9rem;">#0d6efd</div>
+          <button class="btn btn-primary btn-sm mt-2" onclick="changeColor()"><i class="bi bi-palette me-1"></i>Change Colour</button>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <h4><i class="bi bi-code-slash text-primary me-2"></i>JavaScript Code Examples</h4>
+        <pre>//  Variables 
+const name  = "Garima";
+let   score = 95;
+
+//  Arrow Function 
+const greet = (name) => {
+  return `Hello, ${name}!`;
+};
+console.log(greet("Garima"));
+// → "Hello, Garima!"
+
+// DOM Manipulation 
+const btn = document.querySelector('#myBtn');
+const box = document.querySelector('#output');
+
+btn.addEventListener('click', () => {
+  box.textContent = "Button clicked!";
+  box.style.color = "green";
+});
+
+//  Array Methods 
+const scores = [45, 72, 88, 91, 60];
+const passed = scores.filter(s => s >= 60);
+const doubled = scores.map(s => s * 2);
+const total  = scores.reduce((a,b) => a + b, 0);
+
+//  Async / Fetch API 
+async function getUser(id) {
+  try {
+    const res  = await fetch(
+      `https://api.example.com/users/${id}`
+    );
+    const data = await res.json();
+    console.log(data.name);
+  } catch (err) {
+    console.error("Error:", err);
+  }
+}
+
+//  Destructuring 
+const { firstName, age } = userObject;
+const [first, ...rest]   = myArray;
+
+//  Template Literals 
+const msg = `Score: ${score}/100`;
+
+//  Ternary Operator 
+const grade = score >= 60 ? "Pass" : "Fail";</pre>
+
+        <div class="info-box mt-3">
+          <strong><i class="bi bi-lightbulb text-warning me-1"></i>JavaScript Tip</strong><br/>
+          Always use <code>const</code> by default. Only use <code>let</code> when you need to reassign a variable. Avoid <code>var</code> in modern JavaScript it has confusing scope rules.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE NAV -->
+<div class="page-nav">
+  <div class="container d-flex justify-content-between">
+    <a href="bootstrap.html"><i class="bi bi-arrow-left me-1"></i>Previous: Bootstrap</a>
+    <a href="index.html">Back to Home <i class="bi bi-house ms-1"></i></a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4"><h6><i class="bi bi-person-circle me-2"></i>Garima Adhikari</h6><p class="small">CET138 ePortfolio — Built with HTML, CSS, Bootstrap 5 &amp; JavaScript.</p></div>
+      <div class="col-md-4">
+        <h6><i class="bi bi-link-45deg me-2"></i>Quick Links</h6>
+        <ul class="list-unstyled small">
+          <li><a href="index.html"><i class="bi bi-house me-1"></i>Home</a></li>
+          <li><a href="fullstack.html"><i class="bi bi-stack me-1"></i>Full Stack</a></li>
+          <li><a href="html.html"><i class="bi bi-filetype-html me-1"></i>HTML</a></li>
+          <li><a href="css.html"><i class="bi bi-filetype-css me-1"></i>CSS</a></li>
+          <li><a href="bootstrap.html"><i class="bi bi-bootstrap me-1"></i>Bootstrap</a></li>
+          <li><a href="javascript.html"><i class="bi bi-filetype-js me-1"></i>JavaScript</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4"><h6><i class="bi bi-info-circle me-2"></i>Module Info</h6><ul class="list-unstyled small"><li><i class="bi bi-book me-1"></i>CET138 Full Stack Development</li><li><i class="bi bi-clipboard me-1"></i>Assignment 1 ePortfolio</li></ul></div>
+    </div>
+    <div class="footer-bottom"><p class="mb-0">&copy; 2025 Garima Adhikari &nbsp;|&nbsp; CET138 Full Stack Development</p></div>
+  </div>
+</footer>
+
+<button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="bi bi-arrow-up"></i></button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+<script>
+  let count = 0;
+  const display = document.getElementById('counter-val');
+  function changeCount(n) {
+    count += n;
+    display.textContent = count;
+    display.style.color = count < 0 ? '#dc3545' : count === 0 ? '#0d6efd' : '#198754';
+  }
+  function resetCount() {
+    count = 0;
+    display.textContent = 0;
+    display.style.color = '#0d6efd';
+  }
+  function changeColor() {
+    const colors = ['#0d6efd','#dc3545','#198754','#fd7e14','#6610f2','#20c997','#0dcaf0','#d63384'];
+    const pick = colors[Math.floor(Math.random() * colors.length)];
+    const box = document.getElementById('colorBox');
+    box.style.background = pick;
+    box.textContent = pick;
+  }
+</script>
+</body>
+</html>
